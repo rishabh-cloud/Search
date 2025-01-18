@@ -33,3 +33,19 @@ if result1 !=-1:
     print("element found",result1)
 else:
     print("not found")
+
+#sort
+def bbsort(list3):
+    l=len(list3)
+    for i in range(l):
+        for j in range(0,l-i-1):
+            if list3[j]>list3[j+1]:
+                temp=list3[j]
+                list3[j]=list3[j+1]
+                list3[j+1]=temp
+
+
+
+list3=[46,6,2,1,87,45,9]
+bbsort(list3)
+print(list3)
