@@ -10,10 +10,23 @@ def muloflist(list):
     for i in range(len(list)):
         mul = mul * list[i]
     return mul
+def minimum(list):
+    small=list[0]
+    for i in list:
+        if i <small:
+            small=i
+    return small
+def maxi(list):
+    big=list[0]
+    for i in list:
+        if i >big:
+            big=i
+    return big
 
-
-list=[2,3,5,10,15]
+list=[3,2,5,10,15]
 
 print("total value",sumoflist(list))
 print("Mul value",muloflist(list))
+print("minimum value",minimum(list))
+print("maxiumum value",maxi(list))
 
